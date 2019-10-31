@@ -1,5 +1,43 @@
 # rdf-convert-plantgarden
 
+## convert rdf
+
+```
+```
+
+## load virtuoso
+```
+[木 10 31 16:34] tf@/tga/services/virtuoso7dev/var/lib/virtuoso/db
+%pwd
+/tga/services/virtuoso7dev/var/lib/virtuoso/db
+[木 10 31 16:34] tf@/tga/services/virtuoso7dev/var/lib/virtuoso/db
+%/tga/services/virtuoso7dev/bin/virtuoso-t
+[木 10 31 16:34] tf@/tga/services/virtuoso7dev/var/lib/virtuoso/db
+% /tga/services/virtuoso7dev/bin/isql 1111 dba dba
+Connected to OpenLink Virtuoso
+Driver: 07.00.3207 OpenLink Virtuoso ODBC Driver
+OpenLink Interactive SQL (Virtuoso), version 0.9849b.
+Type HELP; for help and EXIT; to exit.
+
+% /tga/services/virtuoso7dev/bin/isql 1111 dba dba
+Connected to OpenLink Virtuoso
+Driver: 07.00.3207 OpenLink Virtuoso ODBC Driver
+OpenLink Interactive SQL (Virtuoso), version 0.9849b.
+Type HELP; for help and EXIT; to exit.
+SQL> ld_dir('repos/rdf-converter-plantgarden', 'L*.ttl', 'https://plantgarden.jp/');
+
+Done. -- 7 msec.
+SQL> rdf_loader_run();
+
+Done. -- 9350 msec.
+SQL> checkpoint ;
+
+Done. -- 2160 msec.
+SQL> 
+```
+
+
+
 ## gff3-to-ttl
 ```
 %perl scripts/make_ttl_gff3.pl FANhybrid_r1.2.genes.gff3
