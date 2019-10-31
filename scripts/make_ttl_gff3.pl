@@ -11,7 +11,8 @@ my $genome = {
    'glyma.Lee.gnm1.ann1.6NZV.gene_models_main.gff3', => 't3847.G002',
    'GWHAAEV00000000.gff' => 't3847.G003',
    'Brapa_genome_v3.0_genes.gff3' => 't3711.G001', #Brassica rapa
-   'Lj3.0_gene_models2' => 't34305.G002' # Lotus japonicus
+   'Lj3.0_gene_models.gff3' => 't34305.G002', # Lotus japonicus
+   'Lj3.0_gene_models2.gff3' => 't34305.G002' # Lotus japonicus
 
    }; 
 my $gid = $genome->{$file} or die "unkown: plant genome.";
@@ -43,7 +44,7 @@ while(<IN>) {
   }
 close(IN);
 
-print Dumper $feature;
+print Dumper $feature ;
 
 sub parse_attrs {
   my $attrs = shift;
@@ -67,8 +68,8 @@ sub gene_ttl {
   my $seqid = $gff->{'seqid'};
   my $source = $gff->{'source'};
   my $fature= $gff->{'feature'};
-  my $start = $gff->{'start'};
-  my $stop = $gff->{'stop'};
+  #my $start = $gff->{'start'};
+  #my $stop = $gff->{'stop'};
   my $score = $gff->{'score'};
   my $direct = $gff->{'direct'};
   my $frame = $gff->{'frame'};
@@ -76,6 +77,9 @@ sub gene_ttl {
   my $spid =  $gff->{'_meta'}->{'spid'};
   my $fid  =  $gff->{'_attrs'}->{'ID'};
   my $pid  =  $gff->{'_attrs'}->{'Parent'};
+
+  my $start   =  ( $direct eq '-') ?  $gff->{'stop'} : $gff->{'start'};
+  my $stop    =  ( $direct eq '-') ?  $gff->{'start'} : $gff->{'stop'};
 
   my $fdirect = ( $direct eq '-') ? 'ReverseStrandPosition' : 'ForwardStrandPosition';
 
