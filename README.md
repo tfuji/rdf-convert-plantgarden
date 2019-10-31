@@ -3,6 +3,8 @@
 ## convert rdf
 
 ```
+perl scripts/make_ttl_primer.pl Lotus_japonicus.mapped_marker.tsv  > Lotus_japonicus.mapped_marker.ttl
+perl scripts/make_ttl_gff3.pl Lj3.0_gene_models2.gff3 > Lj3.0_gene_models2.ttl
 ```
 
 ## load virtuoso
@@ -36,6 +38,7 @@ Done. -- 2160 msec.
 SQL> 
 ```
 
+## sparql
 
 
 ## gff3-to-ttl
