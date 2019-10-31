@@ -15,6 +15,9 @@ perl scripts/make_ttl_gff3.pl Lj3.0_gene_models2.gff3 > Lj3.0_gene_models2.ttl
 
 ```
 
+## install virtuoso
+* See http://wiki.lifesciencedb.jp/mw/index.php/SPARQLthon19/PubChemLoad
+
 ## load virtuoso
 ```
 [木 10 31 16:34] tf@/tga/services/virtuoso7dev/var/lib/virtuoso/db
