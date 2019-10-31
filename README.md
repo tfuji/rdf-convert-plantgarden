@@ -39,6 +39,48 @@ SQL>
 ```
 
 ## sparql
+```
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:<http://purl.obolibrary.org/obo/>
+PREFIX insdc:<http://ddbj.nig.ac.jp/ontologies/nucleotide/>
+PREFIX faldo:  <http://biohackathon.org/resource/faldo#>
+PREFIX : <https://plantgardden.jp/ns/>
+
+select
+?feature ?type ?faldo_reference
+ IF(?fstart < ?fend , ?fstart, ?fend) as ?start 
+ IF(?fstart < ?fend , ?fend, ?fstart) as ?end
+ IF( ?faldo_type = faldo:ForwardStrandPosition,"+", IF( ?faldo_type = faldo:ReverseStrandPosition,"-",".")) as ?strand
+FROM <https://plantgarden.jp/>
+WHERE
+{
+{ 
+  values ?type { obo:SO_0000704}
+  values ?faldo_type { faldo:ForwardStrandPosition faldo:ReverseStrandPosition }
+  ?feature rdf:type ?type .
+  #?type rdfs:label ?feature_type .
+  ?feature faldo:location ?faldo .
+  ?faldo faldo:begin/rdf:type ?faldo_type .
+  ?faldo faldo:begin/faldo:position ?fstart .
+  ?faldo faldo:begin/faldo:reference ?faldo_reference .
+  ?faldo faldo:end/faldo:position ?fend .
+} UNION {
+  values ?type {obo:SO_0000207}
+  values ?faldo_type { faldo:ForwardStrandPosition faldo:ReverseStrandPosition }
+  ?feature rdf:type ?type .
+  #?type rdfs:label ?feature_type .
+  #OPTIONAL{
+  ?feature :has_forword_primer/faldo:location ?faldo .
+  ?faldo faldo:begin/rdf:type ?faldo_type .
+  ?faldo faldo:begin/faldo:position ?fstart .
+  ?faldo faldo:begin/faldo:reference ?faldo_reference .
+  ?faldo faldo:end/faldo:position ?fend .
+}
+}
+ORDER BY ?faldo_reference ?start
+limit 10000
+```
 
 
 ## gff3-to-ttl
