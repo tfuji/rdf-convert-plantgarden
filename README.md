@@ -3,7 +3,8 @@
 
 ## git clone 
 ```
-git clone git@github.com:tfuji/rdf_converter_miyakogusa_genome.git
+git clone git@github.com:tfuji/rdf-convert-plantgarden.git
+cd rdf-convert-plantgarden
 ```
 
 ## convert rdf
@@ -11,6 +12,7 @@ git clone git@github.com:tfuji/rdf_converter_miyakogusa_genome.git
 ```
 perl scripts/make_ttl_primer.pl Lotus_japonicus.mapped_marker.tsv  > Lotus_japonicus.mapped_marker.ttl
 perl scripts/make_ttl_gff3.pl Lj3.0_gene_models2.gff3 > Lj3.0_gene_models2.ttl
+
 ```
 
 ## load virtuoso
