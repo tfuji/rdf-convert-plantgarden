@@ -91,6 +91,7 @@ my $ttl =<< "RDF";
 <https://plantgarden.jp/en/seq/$spid/$genome_assembly_id/pep/$pep_id>
     obo:RO_0001000 <https://plantgarden.jp/en/seq/$spid/$genome_assembly_id/cds/$cds_id> ;
     dc:indentifier "$pep_id" ;
+    rdfs:label "$description" ;
     sio:SIO_000558 <http://purl.uniprot.org/uniprot/$uniprot_db> ;
     a obo:SO_0000104 ;
     :classifiedWith <https://identifiers.org/kegg.orthology:$koid> .
