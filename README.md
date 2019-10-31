@@ -1,5 +1,11 @@
 # rdf-convert-plantgarden
 
+
+## git clone 
+```
+git clone git@github.com:tfuji/rdf_converter_miyakogusa_genome.git
+```
+
 ## convert rdf
 
 ```
