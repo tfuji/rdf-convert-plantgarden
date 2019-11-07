@@ -99,7 +99,158 @@ limit 10000
 ```
 
 
-## gff3-to-ttl
+## RDF model ##
+### Marker RDFの例 ###
+
+```
+@prefix :  <https://plantgardden.jp/ns/> .			
+@prefix        rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .			
+@prefix        rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .			
+@prefix        dc:        <http://purl.org/dc/terms/> .			
+@prefix        obo:        <http://purl.obolibrary.org/obo/> .			
+@prefix        faldo:        <http://biohackathon.org/resource/faldo#> .			
+<https://plantgarden.jp/en/list/t3747/marker/t3747.M000001.1>	rdf:type	obo:SO_0000207	;
+	dc:identifier	"t3747.M000002.1"	;
+	:species_id	"t3747"	;
+	:has_species	<https://plantgarden.jp/en/list/t3747>	;
+	rdfs:label	"FAES0002"	;
+	:sub_number	1	;
+	:marker_type	"SSR"	;
+	:mapped_genome_id	"t3747.G002"	;
+	:has_species	<https://plantgarden.jp/en/list/t3747/genome/t3747.G002>	;
+	:reference_seq_name	"v1.0.a1"	;
+	:chr	"Fvb6-1"	;
+	:target_seq	"NA"	;
+	:allele	"NA"	;
+	:enzyme	"NA"	;
+	rdfs:comment	"<i>F. x ananassa</i> EST-SSR"	;
+	:doi	"NA"	;
+	dc:references	"NA"	;
+	:f_active	"1"	;
+	:has_forword_primer	<https://plantgarden.jp/en/list/t3747/marker/t3747.M000001.1#Fvb6-1:forword-primer>	;
+	:has_reverse_primer	<https://plantgarden.jp/en/list/t3747/marker/t3747.M000001.1#Fvb6-1:reverse-primer>	.
+<https://plantgarden.jp/en/list/t3747/marker/t3747.M000001.1#Fvb6-1:forword-primer>	faldo:location	[	
+	rdf:type	faldo:Region	;
+	rdf:type	obo:SO_0000121	;
+	rdfs:label	"t3747.M000001.1:fwd"	;
+	:sequence	"GCAACAACAGCTCTCGCATA"	;
+	faldo:begin	[	
+	faldo:position	22027099	;
+	faldo:reference	<https://plantgarden.jp/en/list/t3747/sequence/Fvb6-1>	;
+	rdf:type 	faldo:ExactPosition	;
+	rdf:type 	faldo:ForwardStrandPosition	
+		]	;
+	faldo:end 	[	
+	faldo:position	22027118	;
+	faldo:reference	<https://plantgarden.jp/en/list/t3747/sequence/Fvb6-1>	;
+	rdf:type 	faldo:ExactPosition	;
+	rdf:type 	faldo:ForwardStrandPosition	
+		]	
+		]	.
+<https://plantgarden.jp/en/list/t3747/marker/t3747.M000001.1#Fvb6-1:reverse-primer>	faldo:location	[	
+	rdf:type	faldo:Region	;
+	rdf:type	obo:SO_0000132	;
+	rdfs:label	"t3747.M000001.1:fwd"	;
+	:sequence	"GACTATCTCCGCCATCCAAA"	;
+	faldo:begin	[	
+	faldo:position	22027216	;
+	faldo:reference	<https://plantgarden.jp/en/list/t3747/sequence/Fvb6-1>	;
+	rdf:type 	faldo:ExactPosition	;
+	rdf:type 	faldo:ForwardStrandPosition	
+		]	;
+	faldo:end 	[	
+	faldo:position	22027197	;
+	faldo:reference	<https://plantgarden.jp/en/list/t3747/sequence/Fvb6-1>	;
+	rdf:type 	faldo:ExactPosition	;
+	rdf:type 	faldo:ForwardStrandPosition	
+		]	
+		]	.
+```
+
+### HayaiAnnotation RDFの例 ###
+
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <https://plantgardden.jp/ns/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix faldo: <http://biohackathon.org/resource/faldo#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+
+<https://plantgarden.jp/en/list/t34305>
+    :family_name "Phrymaceae" ;
+    :genome_assembly_id "t34305.G002" ;
+    :genus_name "Erythranthe" ;
+    :phylum_name "Streptophyta" ;
+    :superkingdom_name "Eukaryota" .
+
+<https://plantgarden.jp/en/list/t3747/gene/Lj0g3v0013599.1>
+    faldo:location [
+        faldo:begin [
+            faldo:position "125577831" ;
+            faldo:reference <https://plantgarden.jp/en/list/t34305/sequence/Lj3.0_chr0> ;
+            a faldo:ExactPosition, faldo:ReverseStrandPosition
+        ] ;
+        faldo:end [
+            faldo:position "125578853" ;
+            faldo:reference <https://plantgarden.jp/en/list/t34305/sequence/Lj3.0_chr0> ;
+            a faldo:ExactPosition, faldo:ReverseStrandPosition
+        ] ;
+        a faldo:Region
+    ] ;
+    a obo:SO_0000704 .
+
+<https://plantgarden.jp/en/seq/t34305/t34305.G002/cds/Lj0g3v0013599.1>
+    obo:BFO_0000050 <https://plantgarden.jp/en/list/t34305/gene/Lj0g3v0013599.1> ;
+    obo:RO_0002162 <http://identifiers.org/taxonomy/34305> ;
+    dc:identifier "Lj0g3v0242029.1" ;
+    a obo:SO_0000316 ;
+    rdfs:comment "" ;
+    :annotation_version "Lj3.0" .
+
+<https://plantgarden.jp/en/seq/t34305/t34305.G002/pep/Lj0g3v0013599.1>
+    obo:RO_0001000 <https://plantgarden.jp/en/seq/t34305/t34305.G002/cds/Lj0g3v0013599.1> ;
+    dc:indentifier "Lj0g3v0242029.1" ;
+    sio:SIO_000558 <http://purl.uniprot.org/uniprot/A0A022RW76> ;
+    a obo:SO_0000104 ;
+    :classifiedWith obo:GO_0003735, obo:GO_0006412, obo:GO_0022625, <https://identifiers.org/kegg.orthology:K02885> .
+```
+
+### GFF3 ###
+
+```
+@prefix : <https://plantgardden.jp/ns/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix faldo: <http://biohackathon.org/resource/faldo#> .
+
+<https://plantgarden.jp/en/seq/t34305/all/Ljchlorog3v0000020> rdf:type  obo:SO_0000704 ; # Gene
+  dc:identifier "Ljchlorog3v0000020" ;
+  rdfs:label  "Ljchlorog3v0000020" ;
+  faldo:location  [
+    rdf:type  faldo:Region ;
+    faldo:begin [
+      faldo:position  519 ;
+      faldo:reference <https://plantgarden.jp/en/list/t34305/sequence/Lj3.0_chrC> ;
+      rdf:type  faldo:ExactPosition ;
+      rdf:type  faldo:ForwardStrandPosition 
+      ] ;
+    faldo:end   [
+      faldo:position  1371 ;
+      faldo:reference <https://plantgarden.jp/en/list/t34305/sequence/> ;
+      rdf:type  faldo:ExactPosition ;
+      rdf:type  faldo:ForwardStrandPosition
+      ]
+    ] .
+```
+
+## TODO  ##
+* 植物ゲノムのgene/mRNA/CDS/exon/intron構造アノテーションが揺れているのでとりあえずgeneのみ対応
+
+### gff3-to-ttl ###
 ```
 %perl scripts/make_ttl_gff3.pl FANhybrid_r1.2.genes.gff3
 $VAR1 = {
