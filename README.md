@@ -248,6 +248,63 @@ limit 10000
     ] .
 ```
 
+### QTL ###
+```
+@prefix :  <https://plantgardden.jp/ns/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix faldo: <http://biohackathon.org/resource/faldo#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://plantgarden.jp/en/search/trait/t34305/t34305.T000001>  rdf:type  obo:SO_0000771  ; #QTL  
+  dc:identifier  "t34305.T000001"  ; 
+  rdfs:label  "NA"  ; 
+  :species_id "t34305"  ; 
+  dc:references <http://doi.org/10.110.1007/s10265-011-0459-1111/tpj.12220> ; 
+  :trait  "ARA/P (acetylene reduction activity per plant)"  ; 
+  :analysis_method  "QTL analysis"  ; 
+  :max_lod  5.56  ; 
+  :p_value  "NA"  . 
+ 
+# Physical Map Location TODO:更新 Genome/Sequence
+<https://plantgarden.jp/en/search/trait/t34305/t34305.T000001>  faldo:location  [ 
+    rdf:type  faldo:Region ; 
+    :nearest_marker1  <https://plantgarden.jp/en/list/t34305/marker/t34305.M000576.1> ; 
+    :nearest_marker2  <https://plantgarden.jp/en/list/t34305/marker/t34305.M000451.1> ; 
+    :genome_assembly_id "t34305.G002" ;
+  ] .
+
+# Linkage Map Location
+<https://plantgarden.jp/en/search/trait/t34305/t34305.T000001> faldo:location [ 
+    rdf:type faldo:Position  ;
+    faldo:position 68.3  ; #genetic_locus
+    faldo:reference  <https://plantgarden.jp/en/search/trait/t34305#linkage-map> ;
+  ] .
+
+# Analysis/Population/LinkageMap
+
+# Population
+<https://plantgarden.jp/en/search/trait/t34305/t34305.T000001>  :population <https://plantgarden.jp/en/search/trait/t34305/t34305.T000001#population> . 
+<https://plantgarden.jp/en/search/trait/t34305/t34305.T000001#population> rdf:type  sio:SIO_001061  ; #Population 
+  rdf:type  :RIL ;   #Population Type  
+  rdfs:label  "LjMG RIL population (Miyakojima MG- 20 x Gifu B-129)" . #Population Name  
+        
+
+# Trait Annotation
+<https://plantgarden.jp/en/search/trait/t34305/t34305.T000001>  sio:has_annotation  <https://plantgarden.jp/en/search/trait/t34305/t34305.T000001#manual> ;
+  rdf:type  :TraitAnnotation  ; 
+  :assertion  obo:ECO_0000218 ; 
+  prov:wasGeneratedBy <https://plantgarden.jp#curation_activity>  ; 
+  :target <https://plantgarden.jp/en/search/trait/t34305/t34305.T000001>  ; 
+  :body "ARA/P (acetylene reduction activity per plant)"  ; 
+  prov:hadPrimarySource <http://doi.org/10.110.1007/s10265-011-0459-1111/tpj.12220> ; 
+  :semanticTags obo:TO_0000183  ; 
+  :category 6
+```
+
 ## TODO  ##
 * 植物ゲノムのgene/mRNA/CDS/exon/intron構造アノテーションが揺れているのでとりあえずgeneのみ対応
 
