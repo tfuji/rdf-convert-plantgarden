@@ -7,6 +7,12 @@ git clone git@github.com:tfuji/rdf-convert-plantgarden.git
 cd rdf-convert-plantgarden
 ```
 
+## convert plantgardern metadata to rdf
+
+```
+perl scripts/make_ttl_species.pl speciesCode.tsv  >speciesCode.ttl 
+```
+
 ## convert rdf
 
 ```
