@@ -56,6 +56,21 @@ $nearestMarker2ID = $a[21]; # t34305.M000451.1
 
 
 #------------------------------
+
+  my $to = {
+   #'stress trait'=> "obo:TO_0000164",
+   '1' => "obo:TO_0000164",
+   #'sterility or fertility trait' => 'obo:TO_0000392',
+   '2' => 'obo:TO_0000392',
+   #'yield trait' => 'obo:TO_0000371',
+   '3' => 'obo:TO_0000371',
+   #'anatomy and morphology trait' => 'obo:TO_0000017',
+   '4' => 'obo:TO_0000017',
+   #'quality trait' => 'obo:TO_0000597',
+   '5' => 'obo:TO_0000597',
+   #'other miscellaneous trait' => 'obo:TO_0000183'
+   '6' => 'obo:TO_0000183'
+  };
   
   #my ($spcode, $mid) = each(split("\.",$locusID));
   my @b = split(/\./,$locusID);
@@ -65,6 +80,7 @@ $nearestMarker2ID = $a[21]; # t34305.M000451.1
 my $subject = "https://plantgarden.jp/en/search/trait/$spid/$locusID";
 
 my $ttl =<< "RDF";
+# QTL 
 <https://plantgarden.jp/en/search/trait/$spid/$locusID>  rdf:type  obo:SO_0000771  ; #QTL  
   dc:identifier  "$locusID"  ; 
   rdfs:label  "$locusName"  ; 
@@ -73,9 +89,9 @@ my $ttl =<< "RDF";
   :trait  "$trait"  ; 
   :analysis_method  "$analysisMethod"  ; 
   :max_lod  $maxLOD  ; 
-  :p_value  "$pValue"  . 
+  :p_value  "$pValue" . 
  
-# Physical Map Location TODO:更新 Genome/Sequence
+# PhysicalMap
 <$subject>  faldo:location  [ 
     rdf:type  faldo:Region ; 
     :nearest_marker1  <https://plantgarden.jp/en/list/$spid/marker/$nearestMarker1ID> ; 
@@ -83,22 +99,25 @@ my $ttl =<< "RDF";
     :genome_assembly_id "t34305.G002" ;
   ] .
 
-# Linkage Map Location
-<$subject> faldo:location [ 
+# LinkageMap
+<$subject> :has_mapfeature [ 
+    rdf:type :Mapfeature  ;
     rdf:type faldo:Position  ;
     faldo:position $positionOnTheLinkageMap  ; #genetic_locus
     faldo:reference  <https://plantgarden.jp/en/search/trait/$spid#linkage-map> ;
   ] .
 
-# Analysis/Population/LinkageMap
+# Study
+<$subject#study> rdf:type :Study ;
+  :has_population <$subject#population> ;
+  :has_observation <$subject> .
+
 
 # Population
-<$subject>  :population <$subject#population> . 
 <$subject#population> rdf:type  sio:SIO_001061  ; #Population 
-  rdf:type  :$populationType ;   #Population Type  
+  rdf:type  :$populationType ;    #Population Type  
   rdfs:label  "$populationName" . #Population Name  
         
-
 # Trait Annotation
 <$subject>  sio:has_annotation  <$subject#manual> ;
   rdf:type  :TraitAnnotation  ; 
@@ -107,8 +126,11 @@ my $ttl =<< "RDF";
   :target <$subject>  ; 
   :body "$trait"  ; 
   prov:hadPrimarySource <http://doi.org/$doi> ; 
-  :semanticTags obo:TO_0000183  ; 
+  :semanticTags  $to->{$category} ;
   :category $category . 
+
+# QTL->Trait
+<$subject> :has_trait  $to->{$category} .
 
 RDF
 
