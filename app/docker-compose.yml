@@ -1,0 +1,31 @@
+version: '3'
+services:
+  virtuoso:
+    image: openlink/virtuoso-opensource-7:7.2.6-r1-g0a3336c
+    container_name: ${PG_VIRTUOSO_CONTAINER_NAME:-pg_virtuoso}
+    environment:
+      DBA_PASSWORD: "dba"
+      VIRT_Parameters_DirsAllowed: "., ../vad, /usr/share/proj, /database"
+      VIRT_Parameters_NumberOfBuffers: "170000"
+      VIRT_Parameters_MaxDirtyBuffers: "130000"
+      VIRT_Client_SQL_PREFETCH_ROWS: "10000"
+      VIRT_Client_SQL_PREFETCH_BYTES: "160000"
+      VIRT_SPARQL_ResultSetMaxRows: "1000000"
+      VIRT_SPARQL_MaxSortedTopRows: "100000"
+      VIRT_SPARQL_MaxQueryExecutionTime: "300"
+      VIRT_SPARQL_MaxQueryCostEstimationTime: "-1"
+    networks:
+      - plantgarden
+    ports:
+      - 1111:1111
+      - 8890:8890
+    user: ${UID:-0}:${GID:-0}
+    volumes:
+      - ./config/virtuoso:/settings
+      - ./data/virtuoso:/database
+      - ./test:/database/test
+
+networks:
+  plantgarden:
+    external:
+      name: plantgarden
