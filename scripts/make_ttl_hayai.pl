@@ -1,5 +1,13 @@
 #!/usr/local/bin/perl
 
+my $input_zip = shift;
+#open my $fh,"gzcat $input_gzfie |";
+#open my $fh,"unzip -p ftp.kazusa.or.jp/PlantGARDEN/Hayai/Chlamydomonas_reinhardtii_t3055.G001_zen_v1.0.gz '*zen_main_v1.0.tsv'|";
+open my $fh,"unzip -p $input_zip '*zen_main_v1.0.tsv'|";
+
+#my @lines = <$fh>;
+
+
 print "\@prefix :  <https://plantgardden.jp/ns/> .\n";
 print "\@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n";
 print "\@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .\n";
@@ -9,7 +17,7 @@ print "\@prefix faldo:        <http://biohackathon.org/resource/faldo#> .\n";
 print "\@prefix sio: <http://semanticscience.org/resource/> .\n";
 print "\n";
 
-while(<>) {
+while(<$fh>) {
     chop;
     @a = split(/\t/);
     next if $cnt++ == 0;
