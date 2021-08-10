@@ -1,5 +1,6 @@
-# PGARDEN_IN=/home/metabobank/private/PlantGarden/data
-# PGARDEN_RDF=. 
+#PGARDEN_IN=/home/metabobank/private/PlantGarden/data
+PGARDEN_IN=/www/data
+PGARDEN_RDF=./data/virtuoso 
 echo "convert species..."
 perl scripts/tsv2ttl_species.pl $PGARDEN_IN/mysql/import_species/import_species_20210525.tsv > $PGARDEN_RDF/rdf/pg_species.ttl
 echo "convert subspecies..."
@@ -12,3 +13,7 @@ echo "convert marker..."
 perl scripts/tsv2ttl_marker.pl /home/metabobank/private/PlantGarden/data/mysql/import_marker/*.import_marker.tsv > $PGARDEN_RDF/rdf/pg_marker.ttl
 echo "convert trait..."
 perl scripts/tsv2ttl_trait.pl /home/metabobank/private/PlantGarden/data/mysql/import_trait/import_trait_related_*.txt > $PGARDEN_RDF/rdf/pg_trait.ttl
+echo "wget pubtator..."
+wget http://togodb.org/release/pg_pubtator.ttl -P $PGARDEN_RDF/rdf/
+echo "wget rgaugury..."
+wget http://togodb.org/release/pg_rgaugury.ttl -P $PGARDEN_RDF/rdf/
