@@ -1,0 +1,320 @@
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "111" ;      
+    pg_pubtator:end "121" ;
+    pg_pubtator:id "MESH:D059808" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "Solving the controversy of healthier organic fruit: Leaf wounding triggers distant gene expression response of polyphenol biosynthesis in strawberry fruit (Fragaria x ananassa)." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "polyphenol" ;
+    rdfs:label "polyphenol" ;
+    pg_pubtator:bio_concepts "Chemical" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/D059808> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "138" ;      
+    pg_pubtator:end "148" ;
+    pg_pubtator:id "3747" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "Solving the controversy of healthier organic fruit: Leaf wounding triggers distant gene expression response of polyphenol biosynthesis in strawberry fruit (Fragaria x ananassa)." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "strawberry" ;
+    rdfs:label "strawberry" ;
+    pg_pubtator:bio_concepts "Species" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/3747> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "156" ;      
+    pg_pubtator:end "175" ;
+    pg_pubtator:id "3747" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "Solving the controversy of healthier organic fruit: Leaf wounding triggers distant gene expression response of polyphenol biosynthesis in strawberry fruit (Fragaria x ananassa)." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "Fragaria x ananassa" ;
+    rdfs:label "Fragaria x ananassa" ;
+    pg_pubtator:bio_concepts "Species" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/3747> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "500" ;      
+    pg_pubtator:end "506" ;
+    pg_pubtator:id "MESH:D002241" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "As a result phenolic compounds (PCs) and total soluble sugars increased significantly, where specific phenylpropanoids showed increment up to 137% and several genes related to PCs biosynthesis and sugar transport were overexpressed." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "sugars" ;
+    rdfs:label "sugars" ;
+    pg_pubtator:bio_concepts "Chemical" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/D002241> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "547" ;      
+    pg_pubtator:end "563" ;
+    pg_pubtator:id "MESH:C520402" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "As a result phenolic compounds (PCs) and total soluble sugars increased significantly, where specific phenylpropanoids showed increment up to 137% and several genes related to PCs biosynthesis and sugar transport were overexpressed." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "phenylpropanoids" ;
+    rdfs:label "phenylpropanoids" ;
+    pg_pubtator:bio_concepts "Chemical" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/C520402> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "642" ;      
+    pg_pubtator:end "647" ;
+    pg_pubtator:id "MESH:D002241" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "As a result phenolic compounds (PCs) and total soluble sugars increased significantly, where specific phenylpropanoids showed increment up to 137% and several genes related to PCs biosynthesis and sugar transport were overexpressed." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "sugar" ;
+    rdfs:label "sugar" ;
+    pg_pubtator:bio_concepts "Chemical" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/D002241> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31848360" ;
+    pg_pubtator:start "853" ;      
+    pg_pubtator:end "859" ;
+    pg_pubtator:id "MESH:D002244" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "It was observed that the accumulation of PCs on fruits can be triggered by the application of wounding stress in a distant tissue and this accumulation is directly related to carbon partition and associated gene expression." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "carbon" ;
+    rdfs:label "carbon" ;
+    pg_pubtator:bio_concepts "Chemical" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/D002244> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31848360>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31848360>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31849062" ;
+    pg_pubtator:start "46" ;      
+    pg_pubtator:end "56" ;
+    pg_pubtator:id "3747" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "Determination of Pesticide Residual Levels in Strawberry (Fragaria) By Near-Infrared Spectroscopy." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "Strawberry" ;
+    rdfs:label "Strawberry" ;
+    pg_pubtator:bio_concepts "Species" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/3747> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31849062>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31849062>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31849062" ;
+    pg_pubtator:start "279" ;      
+    pg_pubtator:end "289" ;
+    pg_pubtator:id "3747" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "BACKGROUND: In this study, the development of IR based-prediction method for easy, fast and non-destructive detection of pesticide residue levels measured by reference analysis in strawberry (Fragaria x ananassa Duch, Cv." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "strawberry" ;
+    rdfs:label "strawberry" ;
+    pg_pubtator:bio_concepts "Species" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/3747> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31849062>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31849062>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31849062" ;
+    pg_pubtator:start "291" ;      
+    pg_pubtator:end "310" ;
+    pg_pubtator:id "3747" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "BACKGROUND: In this study, the development of IR based-prediction method for easy, fast and non-destructive detection of pesticide residue levels measured by reference analysis in strawberry (Fragaria x ananassa Duch, Cv." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "Fragaria x ananassa" ;
+    rdfs:label "Fragaria x ananassa" ;
+    pg_pubtator:bio_concepts "Species" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/3747> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31849062>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31849062>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "32158449" ;
+    pg_pubtator:start "746" ;      
+    pg_pubtator:end "764" ;
+    pg_pubtator:id "" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "Here, we show that octoploid Fragaria species harbor millions of subgenome-specific DNA variants." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "octoploid Fragaria" ;
+    rdfs:label "octoploid Fragaria" ;
+    pg_pubtator:bio_concepts "Disease" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/32158449>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/32158449>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31583808" ;
+    pg_pubtator:start "293" ;      
+    pg_pubtator:end "301" ;
+    pg_pubtator:id "674470" ;
+    pg_pubtator:organism "Fragaria x ananassa" ;
+    pg_pubtator:sentence "Field experiments were conducted for three strawberry (Fragariax ananassa D.) seasons in Balm and Dover, FL to evaluate the control efficacy of EDN applied through drip tape on various weed species and the fungus Macrophomina phaseolina, the causal agent of charcoal rot of strawberry." ;
+    pg_pubtator:pg_species "t3747" ;
+    pg_pubtator:term "ananassa" ;
+    rdfs:label "ananassa" ;
+    pg_pubtator:bio_concepts "Strain" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/674470> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31583808>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31583808>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3747>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3747>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31768111" ;
+    pg_pubtator:start "92" ;      
+    pg_pubtator:end "103" ;
+    pg_pubtator:id "*3702" ;
+    pg_pubtator:organism "Arabidopsis thaliana" ;
+    pg_pubtator:sentence "Involvement of the membrane-localized ubiquitin ligase ATL8 in sugar starvation response in Arabidopsis." ;
+    pg_pubtator:pg_species "t3702" ;
+    pg_pubtator:term "Arabidopsis" ;
+    rdfs:label "Arabidopsis" ;
+    pg_pubtator:bio_concepts "Genus" ;
+    pg_pubtator:uri <http://identifiers.org/taxonomy/*3702> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31768111>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31768111>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3702>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3702>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31768111" ;
+    pg_pubtator:start "687" ;      
+    pg_pubtator:end "691" ;
+    pg_pubtator:id "843974" ;
+    pg_pubtator:organism "Arabidopsis thaliana" ;
+    pg_pubtator:sentence "This study showed that ATL8 is a sugar starvation response gene and that ATL8 expression was significantly increased by sugar starvation conditions but repressed by exogenous sugar supply." ;
+    pg_pubtator:pg_species "t3702" ;
+    pg_pubtator:term "ATL8" ;
+    rdfs:label "ATL8" ;
+    pg_pubtator:bio_concepts "Gene" ;
+    pg_pubtator:uri <http://identifiers.org/ncbigene/843974> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31768111>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31768111>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3702>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3702>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31768121" ;
+    pg_pubtator:start "1147" ;      
+    pg_pubtator:end "1173" ;
+    pg_pubtator:id "MESH:D021081" ;
+    pg_pubtator:organism "Arabidopsis thaliana" ;
+    pg_pubtator:sentence "We evaluated the mutation induction efficiency by determining the proportion of cells with impaired circadian rhythms." ;
+    pg_pubtator:pg_species "t3702" ;
+    pg_pubtator:term "impaired circadian rhythms" ;
+    rdfs:label "impaired circadian rhythms" ;
+    pg_pubtator:bio_concepts "Disease" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/D021081> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31768121>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31768121>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3702>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3702>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
+
+<http://togodb.org/entry/pg_pubtator/10030630#abstract-164-171>
+
+    pg_pubtator:pmid "31611893" ;
+    pg_pubtator:start "996" ;      
+    pg_pubtator:end "1001" ;
+    pg_pubtator:id "MESH:D012964" ;
+    pg_pubtator:organism "Arabidopsis thaliana" ;
+    pg_pubtator:sentence "Biochemical assays of UGT76C family revealed that UGT76C5 (encoded by At5g05890, previously identified as NaNGT) was a multiple functional nicotinate N-glycosyltransferase, with high preference to UDP-xylose and UDP-arabinose." ;
+    pg_pubtator:pg_species "t3702" ;
+    pg_pubtator:term "NaNGT" ;
+    rdfs:label "NaNGT" ;
+    pg_pubtator:bio_concepts "Chemical" ;
+    pg_pubtator:uri <http://id.nlm.nih.gov/mesh/D012964> ;
+    pg_pubtator:pubmed <http://identifiers.org/pubmed/31611893>;
+    rdfs:seeAlso <http://identifiers.org/pubmed/31611893>;
+    pg_pubtator:taxon <http://identifiers.org/taxonomy/3702>;
+    rdfs:seeAlso <http://identifiers.org/taxonomy/3702>;
+    rdf:type <http://togodb.org/pg_pubtator> .   
+    
